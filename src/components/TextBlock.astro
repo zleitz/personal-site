@@ -1,0 +1,21 @@
+---
+export interface Props {
+  heading: string;
+}
+
+const { heading } = Astro.props;
+---
+
+<div class="flex flex-col w-1/2">
+  <div class="border-b-gray-300 w-fit">
+    <p>{heading}</p>
+  </div>
+  <div class="text-justify">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum
+      recusandae officiis nemo itaque libero nesciunt, minima minus. Ad, autem
+      laboriosam? Hic minima sequi reprehenderit optio. Aperiam perferendis sed
+      explicabo!
+    </p>
+  </div>
+</div>
